@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f5f7f9;
 }
 
 *,
@@ -164,4 +165,14 @@ div:focus {
   position: absolute;
   right: 0;
   top: 7px;
+}
+
+/* 导航栏 */
+.nav_bar {
+  color: #fff;
+  background-color: #3296fa;
+}
+
+.nav_bar .van-icon {
+  color: #fff;
 }

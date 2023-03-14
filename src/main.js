@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+//引入router
+import router from './router/index.js'
+
 // 加载 Vant 核心组件库
 import Vant from 'vant'
 
@@ -13,11 +16,15 @@ import 'amfe-flexible'
 import store from './store/index.js'
 import './styles/index.css' //引入样式
 
+
+//J加载dayjs初始化配置
+import './utils/dayjs'
 // 注册使用 Vant 组件库
 Vue.use(Vant)
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-  store
+  store,
+  router
 }).$mount('#app')
